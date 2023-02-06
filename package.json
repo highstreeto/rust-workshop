@@ -1,0 +1,10 @@
+{
+  "name": "rust-workshop",
+  "packageManager": "yarn@3.4.1",
+  "workspaces": [
+    "doc/slides"
+  ],
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
