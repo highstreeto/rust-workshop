@@ -17,6 +17,8 @@ Im zweiten Teil des Workshops werden wir zwei Anwendungen schrittweise erstellen
 
 Den Funktionsumfang und die Detailverliebtheit der beiden Anwendungen werden wir dann konkret am Termin selbst festlegen. Hier wäre dann eine gute Gelegenheit, seine eigenen aufkommenden Ideen / Fragen zu stellen. 
 
+Wer beim zweiten praktischen Teil mitmachen möchte, sollte bitte [rustup](https://rustup.rs/) auf seinem System installieren. Für die Desktop-Anwendung wird ein aktuelles [Node.JS](https://nodejs.org/en/) benötigt (>= 18.14.0)
+
 <!-- LTeX: language=en-US -->
 ## License
 
