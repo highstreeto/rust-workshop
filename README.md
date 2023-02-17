@@ -3,7 +3,7 @@
 <!-- LTeX: language=de-AT -->
 ## Zusammenfassung
 
-*Rust* wird gerne als System-Programmiersprache (d.h. für Kernel und Betriebssystem) gesehen, weil die Garantien des *Rust*-Compilers hier sehr wichtig sind (Stichwort: **Memory Safety**). Aber nicht nur im Bereich der Kernel und Betriebssystem kann *Rust* punkten: durch ein solides Sprachdesign und guten Tooling-Support ist *Rust auch in vielen anderen Bereichen vorgedrungen (wie CLI-Anwendungen, Web, Spielentwicklung oder selbst im Browser über WebAssembly).
+*Rust* wird gerne als System-Programmiersprache (d.h. für Kernel und Betriebssystem) bezeichnet, weil die Garantien des *Rust*-Compilers hier sehr wichtig sind (Stichwort: **Memory Safety**). Aber nicht nur im Bereich der Kernel und Betriebssystem kann *Rust* punkten: durch ein solides Sprachdesign und guten Tooling-Support ist *Rust auch in vielen anderen Bereichen vorgedrungen (wie CLI-Anwendungen, Web, Spielentwicklung oder selbst im Browser über WebAssembly).
 
 In diesem Workshop werden wir uns daher mit dieser spannenden und modernen Programmiersprache auseinandersetzen. Der Workshop selbst gliedert sich in zwei Teile: in den ersten theoretischen Teil und den zweiten praktischen Teil.
 
