@@ -1,2 +1,2 @@
 [workspace]
-members = ["src/cli"]
+members = ["src/cli", "src/editor-app/src-tauri"]
