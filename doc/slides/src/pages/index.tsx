@@ -32,7 +32,7 @@ export const pageQuery = graphql`
   query SlidesQuery {
     allFile(
       filter: { sourceInstanceName: { eq: "slides" }, extension: { eq: "md" } }
-      sort: { fields: childMarkdownRemark___frontmatter___slide }
+      sort: { childMarkdownRemark: { frontmatter: { slide: ASC } } }
     ) {
       edges {
         node {

@@ -1,2 +1,4 @@
+node_modules/
 .cache/
-public/
+public
+src/gatsby-types.d.ts
