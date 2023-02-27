@@ -1,26 +1,11 @@
-import { graphql, Page, PageProps } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import * as React from "react";
 import Slides from "../components/slides";
 
-interface SlidesQuery {
-  allFile: {
-    edges: Array<{
-      node: {
-        markdown: {
-          html: string;
-          frontmatter: {
-            slide: number;
-          };
-        };
-      };
-    }>;
-  };
-}
-
-const IndexPage = ({ data }: PageProps<SlidesQuery>) => {
+const IndexPage = ({ data }: PageProps<Queries.IndexPageQuery>) => {
   const slides = data.allFile.edges.map((e) => ({
-    html: e.node.markdown.html,
-    nr: e.node.markdown.frontmatter.slide,
+    html: e.node.markdown?.html ?? "",
+    nr: e.node.markdown?.frontmatter?.slide ?? 0,
   }));
 
   return <Slides slides={slides}></Slides>;
@@ -29,7 +14,7 @@ const IndexPage = ({ data }: PageProps<SlidesQuery>) => {
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query SlidesQuery {
+  query IndexPage {
     allFile(
       filter: { sourceInstanceName: { eq: "slides" }, extension: { eq: "md" } }
       sort: { childMarkdownRemark: { frontmatter: { slide: ASC } } }
