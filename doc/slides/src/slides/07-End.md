@@ -1,5 +1,6 @@
 ---
 slide: 7
+lang: en-US
 ---
 
 <section>

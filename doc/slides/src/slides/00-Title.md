@@ -1,5 +1,6 @@
 ---
 slide: 0
+lang: en-US
 ---
 
 # Rust Workshop
