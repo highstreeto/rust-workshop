@@ -5,6 +5,8 @@ lang: en-US
 
 ## What is Rust?
 
+Ferris: https://rustacean.net
+
 Features
 
 - System-level programming
