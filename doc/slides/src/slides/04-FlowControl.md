@@ -1,5 +1,5 @@
 ---
-slide: 3
+slide: 4
 lang: en-US
 ---
 
@@ -8,8 +8,10 @@ lang: en-US
 ## Flow control
 
 Everything returns a value <small>(but can be Unit type)</small>
+(is a expression instead of a statement)
 
-`ìf`, `loop`, `while`, `for` and `match`
+Conditional: `ìf` and `match`
+Repetition: `loop`, `while` and `for`
 
 </section>
 
@@ -38,7 +40,7 @@ let loop_ret = loop {
     counter += 1;
 
     if counter == 15 {
-    break counter
+        break counter
     }
 };
 assert_eq!(loop_ret, 15); // used in unit tests
