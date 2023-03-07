@@ -10,7 +10,7 @@ import "reveal.js/dist/reset.css";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/black.css";
 import "reveal.js/plugin/highlight/monokai.css";
-import "reveal.js-verticator/plugin/verticator/verticator.css"
+import "reveal.js-verticator/plugin/verticator/verticator.css";
 
 const FillViewport = styled.div({
   width: "100vw",
@@ -29,10 +29,11 @@ export default ({ slides }: Props) => {
       const deck = new Reveal(container.current, {
         embedded: true,
         slideNumber: "c/t",
-        transitionSpeed: 'fast',
+        transitionSpeed: "fast",
         verticator: {
           darktheme: true,
         },
+        hash: true,
         pdfSeparateFragments: false,
         plugins: [RevealHighlight, RevealNotes, RevealSearch, RevealVerticator],
       });
@@ -56,4 +57,4 @@ export default ({ slides }: Props) => {
       </div>
     </FillViewport>
   );
-}
+};
