@@ -5,13 +5,15 @@ lang: en-US
 
 <section>
 
-## Functions
+## 3. Functions
 
 Declared with `fn`, order-independent
 
 Binary has single `main()` function
 
 </section>
+
+<section>
 
 ```rust
 fn five() -> i32 {
@@ -36,3 +38,5 @@ fn plus_one(x: i32) -> i32 {
     x + 1
 }
 ```
+
+</section>

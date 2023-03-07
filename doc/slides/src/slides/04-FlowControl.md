@@ -5,12 +5,13 @@ lang: en-US
 
 <section>
 
-## Flow control
+## 4. Flow control
 
 Everything returns a value <small>(but can be Unit type)</small>
 (is a expression instead of a statement)
 
 Conditional: `ìf` and `match`
+
 Repetition: `loop`, `while` and `for`
 
 </section>

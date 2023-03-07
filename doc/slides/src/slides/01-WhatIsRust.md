@@ -3,7 +3,7 @@ slide: 1
 lang: en-US
 ---
 
-## What is Rust?
+## 1. What is Rust?
 
 Ferris: https://rustacean.net
 
@@ -23,3 +23,8 @@ History
   - Sponsored by Mozilla since 2019
 - 2021: Forming of the Rust Foundation (AWS, Huawei, Google, Microsoft, Mozilla)
 - 2022: Linux kernel now includes Rust code besides C and Assembly
+
+Learning
+
+Books!
+Rust Book - https://www.rust-lang.org/learn
