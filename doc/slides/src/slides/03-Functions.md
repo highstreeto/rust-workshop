@@ -103,7 +103,7 @@ To group functions (and types), we can use `mod`
 
 <div class="fragment fade-in-then-semi-out">
 
-Functions are only visible in the current module scope, for outside access use `pub`
+Functions are only visible in the current module scope, for outside access use `pub` and for navigating into `::`
 
 </div>
 
