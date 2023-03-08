@@ -7,77 +7,149 @@ lang: en-US
 
 ## 4. Flow control
 
-Everything returns a value <small>(but can be Unit type)</small>
-(is an expression instead of a statement)
-
-Conditional: `ìf` and `match`
-
-Repetition: `loop`, `while` and `for`
+<ol>
+<li class="fragment fade-in-then-semi-out">Conditional</li>
+<li class="fragment fade-in-then-semi-out">Repetition</li>
+<li class="fragment fade-in-then-semi-out">for-Loop</li>
+</ol>
 
 </section>
 
 <section>
 
-### If
+### 4.1. Conditional
+
+<div class="fragment fade-in-then-semi-out">
+
+For conditional flow, we have `if` and `match`
+
+</div>
+
+<div class="fragment fade-in-then-semi-out">
+
+Both are expressions, not statements
+
+</div>
+
+<div class="fragment fade-in-then-semi-out">
+
+`match` is exhaustive, use `_` for catch-all
+
+</div>
+
+<div class="fragment fade-in-then-semi-out">
+
+Example:
+
+<div style="display: flex; gap: 2rem">
 
 ```rust
-let input = String::from("Hello World");
-if input == "Hello World" {
-    println!("Classic") // Method with ! are macros
+let var: i32 = 10;
+
+if var > 10 {
+    println!("var is > 10!");
+} else if var == 10 {
+    println!("var is == 10!");
 } else {
-    println!("Unexpected");
+    println!("var is < 10!")
 }
 ```
+
+```rust
+let var: i32 = 10;
+
+match var {
+    // .. indicates range
+    11.. => println!("var > 10!"),
+    10   => println!("var == 10!"),
+    ..=9 => println!("var < 10!"),
+}
+```
+
+</div>
+
+</div>
 
 </section>
 
 <section>
 
-### Loop
+### 4.2. Repetition
+
+<div class="fragment fade-in-then-semi-out">
+
+For repetition, we have `loop` and `while`
+
+</div>
+
+<div class="fragment fade-in-then-semi-out">
+
+Both are also expressions, not statements
+
+</div>
+
+<div class="fragment fade-in-then-semi-out">
+
+`loop` is infinite, controlled with `break` and `continue`, `while` loops until condition is `false`
+
+</div>
+
+<div class="fragment fade-in-then-semi-out">
+
+Example:
+
+<div style="display: flex; gap: 2rem">
 
 ```rust
-let mut counter = 1;
-let loop_ret = loop {
+let mut counter: i32 = 0;
+loop {
     counter += 1;
 
-    if counter == 15 {
-        break counter
+    if counter > 10 {
+        break;
     }
-};
-assert_eq!(loop_ret, 15); // used in unit tests
-
-let loop_ret = loop {
-    break
-};
-println!("loop_ret: {:?}", loop_ret);
-```
-
-</section>
-
-<section>
-
-### While
-
-```rust
-let mut counter = 1;
-let while_ret = while counter < 15 {
-    counter += 1;
-};
-assert_eq!(counter, 15);
-assert_eq!(while_ret, ());
-```
-
-</section>
-
-<section>
-
-### For
-
-```rust
-let range = (1..101);
-for elem in range {
-    print!("{} ", elem);
 }
 ```
+
+```rust
+let mut counter: i32 = 0;
+while counter < 10 {
+    counter += 1;
+}
+```
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+### 4.3. for-Loop
+
+<div class="fragment fade-in-then-semi-out">
+
+For iterating over ranges and collections, we use `for`
+
+</div>
+
+<div class="fragment fade-in-then-semi-out">
+
+Compatible with anything that supports `IntoIterator` <small>trait</small>
+
+</div>
+
+<div class="fragment fade-in-then-semi-out">
+
+Example:
+
+```rust
+for counter in 1..=10 {
+    println!("{counter}");
+}
+```
+
+</div>
 
 </section>
