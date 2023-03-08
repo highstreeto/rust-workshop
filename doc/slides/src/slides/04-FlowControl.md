@@ -8,7 +8,7 @@ lang: en-US
 ## 4. Flow control
 
 Everything returns a value <small>(but can be Unit type)</small>
-(is a expression instead of a statement)
+(is an expression instead of a statement)
 
 Conditional: `ìf` and `match`
 
