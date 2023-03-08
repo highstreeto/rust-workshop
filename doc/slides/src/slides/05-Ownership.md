@@ -42,3 +42,17 @@ error[E0499]: cannot borrow `s` as mutable more than once at a time
 ```
 
 </section>
+
+<section>
+
+## Appendix
+
+To discuss, types of ownership
+
+Burrows
+
+Lifetimes
+
+Burrow checker examples (conflicting burrows, etc.)
+
+</section>
