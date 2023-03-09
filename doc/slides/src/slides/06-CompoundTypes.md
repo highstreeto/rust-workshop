@@ -5,11 +5,15 @@ lang: en-US
 
 <section>
 
-## Compound Types
+## 6. Compound Types
 
-Arrays, Tuples, Enum and Structs
-
-And Slices
+<ol>
+<li class="fragment fade-in-then-semi-out">Arrays</li>
+<li class="fragment fade-in-then-semi-out">Slices</li>
+<li class="fragment fade-in-then-semi-out">Tuples</li>
+<li class="fragment fade-in-then-semi-out">Enums</li>
+<li class="fragment fade-in-then-semi-out">Structs</li>
+</ol>
 
 </section>
 
