@@ -23,19 +23,19 @@ lang: en-US
 
 <div class="fragment fade-in-then-semi-out">
 
-Each value in Rust has an owner.
+Each value in Rust has an owner
 
 </div>
 
 <div class="fragment fade-in-then-semi-out">
 
-There can only be one owner at a time.
+There can only be one owner at a time
 
 </div>
 
 <div class="fragment fade-in-then-semi-out">
 
-When the owner goes out of scope, the value will be dropped.
+When the owner goes out of scope, the value will be dropped
 
 </div>
 
@@ -113,7 +113,7 @@ To reference data of non-`Copy` types (without cloning or moving), we can "burro
 
 <div class="fragment fade-in-then-semi-out">
 
-References must always be valid.
+References must always be valid
 
 </div>
 
@@ -191,7 +191,7 @@ References all have a lifetime, and must be the same or smaller than the data
 
 <div class="fragment fade-in-then-semi-out">
 
-Inferred in simple cases, but can be set by using `'`.
+Inferred in simple cases, but can be set by using `'`
 
 </div>
 

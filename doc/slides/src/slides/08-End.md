@@ -7,6 +7,8 @@ lang: en-US
 
 ## Thank you for your attention!
 
+Now let's get started on the practical part! :)
+
 Source available at GitHub under [highstreeto/rust-workshop](https://github.com/highstreeto/rust-workshop)
 
 </section>

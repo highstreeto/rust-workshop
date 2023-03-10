@@ -5,7 +5,7 @@ lang: en-US
 
 <section>
 
-## Cargo
+## 7. Cargo
 
 Used for project creation / building / testing and running
 
