@@ -120,6 +120,7 @@ Example:
 
 ```rust
 let boolean: bool = true;
+let unit: () = ();
 ```
 
 </div>
@@ -133,6 +134,12 @@ let boolean: bool = true;
 <div class="fragment fade-in-then-semi-out">
 
 Stores one Unicode Scalar Value (including emojis)
+
+</div>
+
+<div class="fragment fade-in-then-semi-out">
+
+Does not correspond strictly to human sense of character
 
 </div>
 

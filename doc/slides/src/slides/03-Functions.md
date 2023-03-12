@@ -103,13 +103,17 @@ To group functions (and types), we can use `mod`
 
 <div class="fragment fade-in-then-semi-out">
 
-Functions are only visible in the current module scope, for outside access use `pub` and for navigating into `::`
+Functions are only visible in the current module scope, for outside access use `pub`
 
 </div>
 
 <div class="fragment fade-in-then-semi-out">
 
-Example:
+For navigating into use `::` or include directly with `use`
+
+</div>
+
+<div class="fragment fade-in-then-semi-out">
 
 ```rust
 fn test() {

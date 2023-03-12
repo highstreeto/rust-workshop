@@ -208,7 +208,7 @@ enum Message {
 
 <div class="fragment fade-in-then-semi-out">
 
-Functions <small>(methods)</small> can be associated with strut's and enum's
+Functions <small>(methods)</small> can be associated with struct's and enum's
 
 </div>
 
