@@ -1,7 +1,19 @@
-# Tauri + Preact + Typescript
+---
+lang: en-US
+---
 
-This template should help get you started developing with Tauri, Preact and Typescript in Vite.
+# Very simple editor
 
-## Recommended IDE Setup
+This exmplae uses the monacco editor and tauri to create a very simple Markdown editor.
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+To install:
+
+```
+pnpm install
+```
+
+To run:
+
+```
+pnpm tauri dev
+```
