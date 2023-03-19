@@ -1,9 +1,10 @@
 import { defineConfig } from "vite";
 import preact from "@preact/preset-vite";
+import monacoEditorPlugin from "vite-plugin-monaco-editor";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [preact()],
+  plugins: [preact(), monacoEditorPlugin.default({})],
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   // prevent vite from obscuring rust errors

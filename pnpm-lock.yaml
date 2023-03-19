@@ -58,11 +58,14 @@ importers:
       '@tauri-apps/api': ^1.2.0
       '@tauri-apps/cli': ^1.2.2
       '@types/node': ^18.7.14
+      monaco-editor: ^0.36.1
       preact: ^10.11.3
       typescript: ^4.6.4
       vite: ^4.0.0
+      vite-plugin-monaco-editor: ^1.1.0
     dependencies:
       '@tauri-apps/api': 1.2.0
+      monaco-editor: 0.36.1
       preact: 10.13.0
     devDependencies:
       '@babel/core': 7.21.0
@@ -71,6 +74,7 @@ importers:
       '@types/node': 18.14.2
       typescript: 4.9.5
       vite: 4.1.4_@types+node@18.14.2
+      vite-plugin-monaco-editor: 1.1.0_monaco-editor@0.36.1
 
 packages:
 
@@ -8346,6 +8350,9 @@ packages:
     resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
     dev: false
 
+  /monaco-editor/0.36.1:
+    resolution: {integrity: sha512-/CaclMHKQ3A6rnzBzOADfwdSJ25BFoFT0Emxsc4zYVyav5SkK9iA6lEtIeuN/oRYbwPgviJT+t3l+sjFa28jYg==}
+
   /ms/2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
     dev: false
@@ -11154,6 +11161,14 @@ packages:
       unist-util-stringify-position: 2.0.3
       vfile-message: 2.0.4
     dev: false
+
+  /vite-plugin-monaco-editor/1.1.0_monaco-editor@0.36.1:
+    resolution: {integrity: sha512-IvtUqZotrRoVqwT0PBBDIZPNraya3BxN/bfcNfnxZ5rkJiGcNtO5eAOWWSgT7zullIAEqQwxMU83yL9J5k7gww==}
+    peerDependencies:
+      monaco-editor: '>=0.33.0'
+    dependencies:
+      monaco-editor: 0.36.1
+    dev: true
 
   /vite/4.1.4_@types+node@18.14.2:
     resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
