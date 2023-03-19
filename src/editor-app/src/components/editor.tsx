@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "preact/hooks";
 import * as monaco from "monaco-editor";
-import { invoke } from "@tauri-apps/api";
+import { invoke, tauri } from "@tauri-apps/api";
 
 export function Editor<FC>() {
   const containerRef = useRef(null);
@@ -12,8 +12,8 @@ export function Editor<FC>() {
   useEffect(() => {
     if (containerRef.current) {
       const editor = monaco.editor.create(containerRef.current, {
-        value: `console.log("Hello World!");`,
-        language: "javascript",
+        value: `# Hello Editor!`,
+        language: "markdown",
         automaticLayout: true,
       });
 
@@ -34,6 +34,20 @@ export function Editor<FC>() {
         }}
       >
         Load File
+      </button>
+      <button
+        onClick={async () => {
+          const contents = editor?.getModel()?.getValue();
+
+          if (contents !== undefined && filePath !== undefined) {
+            await tauri.invoke("save_file", {
+              path: filePath,
+              contents: contents,
+            });
+          }
+        }}
+      >
+        Save File
       </button>
       <input
         type="text"
