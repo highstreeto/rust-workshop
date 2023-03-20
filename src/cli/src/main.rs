@@ -1,6 +1,6 @@
 use clap::Parser;
 use cli::Point;
-use std::path::PathBuf;
+use std::{error::Error, path::PathBuf};
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
@@ -14,29 +14,24 @@ struct Args {
     output: PathBuf,
 }
 
-#[derive(Debug)]
-enum Errors {
-    IoError,
-}
-
-fn main() -> Result<(), Errors> {
+fn main() -> Result<(), Box<dyn Error>> {
     let args = Args::parse();
 
-    let input = std::fs::read_to_string(&args.input).map_err(|_| Errors::IoError)?;
+    let input = std::fs::read_to_string(&args.input)?;
 
-    let input: Vec<Point> = serde_json::from_str(&input).map_err(|_| Errors::IoError)?;
+    let input: Vec<Point> = serde_json::from_str(&input)?;
 
     for v in input.iter() {
         println!("{v}");
     }
 
-    let output = serde_yaml::to_string(&input).map_err(|_| Errors::IoError)?;
+    let output = serde_yaml::to_string(&input)?;
 
     if !args.output.parent().unwrap().exists() {
-        std::fs::create_dir_all(&args.output.parent().unwrap()).map_err(|_| Errors::IoError)?;
+        std::fs::create_dir_all(&args.output.parent().unwrap())?;
     }
 
-    std::fs::write(&args.output, output).map_err(|_| Errors::IoError)?;
+    std::fs::write(&args.output, output)?;
 
     Ok(())
 }
