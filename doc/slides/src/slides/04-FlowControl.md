@@ -51,7 +51,7 @@ if var > 10 {
 } else if var == 10 {
     println!("var is == 10!");
 } else {
-    println!("var is < 10!")
+    println!("var is < 10!");
 }
 ```
 
