@@ -83,8 +83,8 @@ Integer and Float types have fixed size <small>(special type for arch.)</small>
 
 | Length | Signed |
 | ------ | ------ |
-| 16-bit | `f16`  |
 | 32-bit | `f32`  |
+| 64-bit | `f64`  |
 
 On integer overflow / underflow:
 
